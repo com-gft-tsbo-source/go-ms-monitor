@@ -14,9 +14,10 @@ import (
 func (ms *MsMonitor) httpGetMonitor(w http.ResponseWriter, r *http.Request) (int, contentLen int, msg string) {
 	status := http.StatusOK
 	response := NewMonitorResponse("OK", ms)
-	w.Header().Set("Content-Type", "application/json; charset=utf-8")
-	w.Header().Set("cid", ms.GetName())
-	w.Header().Set("version", ms.GetVersion())
+	ms.SetResponseHeaders("application/json; charset=utf-8", w, r)
+	// w.Header().Set("Content-Type", "application/json; charset=utf-8")
+	// w.Header().Set("cid", ms.GetName())
+	// w.Header().Set("version", ms.GetVersion())
 	w.WriteHeader(status)
 	contentLen = ms.Reply(w, response)
 	return status, contentLen, "Reported monitored devices."
@@ -57,9 +58,10 @@ func (ms *MsMonitor) httpPostMonitor(w http.ResponseWriter, r *http.Request) (in
 
 	msg = fmt.Sprintf("Device '%s' created.", node.GetDeviceAddress())
 	response := NewMonitorResponse(msg, ms)
-	w.Header().Set("Content-Type", "application/json; charset=utf-8")
-	w.Header().Set("cid", ms.GetName())
-	w.Header().Set("version", ms.GetVersion())
+	ms.SetResponseHeaders("application/json; charset=utf-8", w, r)
+	// w.Header().Set("Content-Type", "application/json; charset=utf-8")
+	// w.Header().Set("cid", ms.GetName())
+	// w.Header().Set("version", ms.GetVersion())
 	w.WriteHeader(status)
 	contentLen = ms.Reply(w, response)
 	return status, contentLen, msg
@@ -104,9 +106,10 @@ func (ms *MsMonitor) httpDeleteMonitor(w http.ResponseWriter, r *http.Request) (
 
 	msg = fmt.Sprintf("Device '%s' deleted.", node.GetDeviceAddress())
 	response := NewMonitorResponse(msg, ms)
-	w.Header().Set("Content-Type", "application/json; charset=utf-8")
-	w.Header().Set("cid", ms.GetName())
-	w.Header().Set("version", ms.GetVersion())
+	ms.SetResponseHeaders("application/json; charset=utf-8", w, r)
+	// w.Header().Set("Content-Type", "application/json; charset=utf-8")
+	// w.Header().Set("cid", ms.GetName())
+	// w.Header().Set("version", ms.GetVersion())
 	w.WriteHeader(status)
 	contentLen = ms.Reply(w, response)
 	return status, contentLen, msg
