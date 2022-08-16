@@ -6,7 +6,7 @@ import (
 	"net"
 	"net/http"
 
-	"com.gft.tsbo-training.src.go/common/device/util/devicemap"
+	"github.com/com-gft-tsbo-source/go-common/device/util/devicemap"
 )
 
 // ---------------------------------------------------------------------------

@@ -4,7 +4,7 @@ import (
 	"os"
 	"time"
 
-	"com.gft.tsbo-training.src.go/ms-monitor/msmonitor"
+	"github.com/com-gft-tsbo-source/go-ms-monitor/msmonitor"
 )
 
 // ###########################################################################

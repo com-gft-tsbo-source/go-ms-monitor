@@ -4,10 +4,10 @@ import (
 	"flag"
 	"time"
 
-	"com.gft.tsbo-training.src.go/common/device/devicedb"
-	"com.gft.tsbo-training.src.go/common/device/util/devicemap"
-	"com.gft.tsbo-training.src.go/common/device/util/devicenode"
-	"com.gft.tsbo-training.src.go/common/ms-framework/microservice"
+	"github.com/com-gft-tsbo-source/go-common/device/devicedb"
+	"github.com/com-gft-tsbo-source/go-common/device/util/devicemap"
+	"github.com/com-gft-tsbo-source/go-common/device/util/devicenode"
+	"github.com/com-gft-tsbo-source/go-common/ms-framework/microservice"
 )
 
 // ###########################################################################

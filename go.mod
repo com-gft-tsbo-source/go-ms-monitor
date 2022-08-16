@@ -1,0 +1,27 @@
+module github.com/com-gft-tsbo-source/go-ms-monitor
+
+go 1.18
+
+require github.com/com-gft-tsbo-source/go-common v0.0.2
+
+require (
+	github.com/beorn7/perks v1.0.1 // indirect
+	github.com/boltdb/bolt v1.3.1 // indirect
+	github.com/cespare/xxhash/v2 v2.1.1 // indirect
+	github.com/gocql/gocql v0.0.0-20211015133455-b225f9b53fa1 // indirect
+	github.com/golang/protobuf v1.4.3 // indirect
+	github.com/golang/snappy v0.0.3 // indirect
+	github.com/hailocab/go-hostpool v0.0.0-20160125115350-e80d13ce29ed // indirect
+	github.com/lib/pq v1.10.4 // indirect
+	github.com/mattn/go-sqlite3 v1.14.9 // indirect
+	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
+	github.com/prometheus/client_golang v1.11.0 // indirect
+	github.com/prometheus/client_model v0.2.0 // indirect
+	github.com/prometheus/common v0.26.0 // indirect
+	github.com/prometheus/procfs v0.6.0 // indirect
+	golang.org/x/crypto v0.0.0-20211115234514-b4de73f9ece8 // indirect
+	golang.org/x/net v0.0.0-20211116231205-47ca1ff31462 // indirect
+	golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1 // indirect
+	google.golang.org/protobuf v1.26.0-rc.1 // indirect
+	gopkg.in/inf.v0 v0.9.1 // indirect
+)
