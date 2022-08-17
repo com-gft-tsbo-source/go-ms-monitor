@@ -1,0 +1,5 @@
+CUSTOMER ?= com.gft.tsbo
+PROJECT ?= com.gft.tsbo.source
+MODULE ?= backend
+COMPONENT ?= ms-monitor
+GIT_HOST ?= github.com
