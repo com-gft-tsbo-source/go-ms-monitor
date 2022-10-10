@@ -21,7 +21,7 @@ type MonitorResponse struct {
 
 // InitMonitorResponse Constructor of a response of ms-monitor
 func InitMonitorResponse(r *MonitorResponse, status string, ms *MsMonitor) {
-	microservice.InitResponseFromMicroService(&r.Response, ms, status)
+	microservice.InitResponseFromMicroService(&r.Response, ms, 200, status)
 	r.Devices = make([]*devicenode.DeviceNode, len(ms.ByDeviceAddress))
 	idx := 0
 	for _, value := range ms.ByDeviceAddress {
